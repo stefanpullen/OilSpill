@@ -1,0 +1,6 @@
+index,Spill,Volume,Barrels,VolCum,Date,Location,Latitude,Longitude,Cause
+1,Gulf War,460,545000,January 1991,Persian Gulf,25,50,Iraq deliberately released oil during the war
+2,Deepwater Horizon,210,335,April 2010,Gulf of Mexico,27,-88,Explosion on the Deepwater Horizon rig
+3,Ixtoc I,138,509,June 1979,"Bay of Campeche, Mexico",20,-92.5,Blowout during oil drilling
+4,Atlantic Empress/Aegean Captain,80,618,July 1979,Caribbean Sea,12,-63,Collision of two tankers
+5,ABT Summer,80,698,May 1991,"Angola coast, Atlantic Ocean",-11.5,14.5,Explosion and sinking of tanker

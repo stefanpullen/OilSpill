@@ -1,33 +1,25 @@
 <script>
-    	import { Text } from '@threlte/extras';
+	import { Text, Float } from '@threlte/extras';
+	export let data;
+
+	const font1 = './Fonts/Lora-Medium.ttf';
+	const font2 = './Fonts/Raleway-Regular.ttf';
 </script>
 
-<Text
-	text={'sugar'}
-	position.z={5}
-	position.x={10}
-	position.y={0}
-	fontSize={1}
-	rotation.y={Math.PI / 2}
-    color={'black'}
-    anchorX="center"
-/>
-<Text
-	text={'saturated fat'}
-	position.z={10}
-	position.x={5}
-	position.y={0}
-	fontSize={1}
-    color={'black'}
-    anchorX="center"
-/>
-<Text
-	text={'sodium'}
-	position.z={10}
-	position.x={-1}
-	position.y={5}
-	fontSize={1}
-    color={'black'}
-    anchorX="center"
-    rotation.z={Math.PI / 2}
-/>
+<Float speed={1} floatIntensity={0} floatingRange={[-0.2, 0.2]}>
+	<Text
+		text={data.Barrels + " Million Barrels"}
+		position.z={0.11}
+		position.x={0}
+		position.y={data.VolCumRel * 1.09}
+		fontSize={data.Vol0 / 4}
+		maxWidth={data.Vol0 *2}
+		color={'white'}
+		anchorX="center"
+		font={font1}
+		textAlign={'center'}
+		fillOpacity={data.opacity}
+		lineHeight={0.9}
+	/>
+
+</Float>

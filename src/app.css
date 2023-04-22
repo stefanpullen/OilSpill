@@ -1,16 +1,33 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url('./Fonts/Raleway-Regular.ttf');
+}
+@font-face {
+	font-family: 'MyFont2';
+	src: url('./Fonts/Lora-Regular.ttf');
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Courier, monospace;
+	font-family: 'MyFont', Raleway-Regular;
 }
 
-
+h2 {
+	font-family: 'MyFont2', Lora-Regular;
+	font-size: 1.2rem;
+}
 
 body {
-	align-items: center;
+	/* overflow: hidden;
+	position: absolute;  */
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
 	display: flex;
 	justify-content: center;
-	height: 100vh;
-	margin: 0;
+	/* align-items: center;   */
+	background-color: #230612;
 }
