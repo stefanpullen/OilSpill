@@ -21,7 +21,7 @@
 	// scale3.set(1)
 	// scale4.set(1)
 
-	const waterGeometry = new PlaneGeometry(3, 3);
+	const waterGeometry = new PlaneGeometry(5, 4);
 
 	const water = new Water(waterGeometry, {
 		color: '#373A36',
@@ -33,7 +33,7 @@
 </script>
 
 <T.Mesh receiveShadow position.z={frontPos.z} position.y={frontPos.y * 1.1} rotation.x={0}>
-	<T.PlaneGeometry args={[3, 3]} />
+	<T.PlaneGeometry args={[5, 4]} />
 	<T.MeshPhysicalMaterial reflectivity={1} metalness={0.9} color={'white'} roughness={0.2} />
 </T.Mesh>
 
